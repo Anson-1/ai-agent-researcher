@@ -39,7 +39,7 @@ if "history" not in st.session_state:
 st.title("🤖 AI Research Agent")
 st.caption(
     "A ReAct agent that reasons step-by-step, calls tools (web search, stock data, calculator), "
-    "and synthesizes a final answer. Powered by HuggingFace Inference API."
+    "and synthesizes a final answer. Powered by Qwen2.5 via HuggingFace."
 )
 
 # ── How it works ─────────────────────────────────────────────────────────────

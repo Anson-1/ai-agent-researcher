@@ -29,8 +29,8 @@ Rules:
 
 MODELS = [
     "Qwen/Qwen2.5-72B-Instruct",
-    "meta-llama/Llama-3.1-8B-Instruct",
-    "mistralai/Mixtral-8x7B-Instruct-v0.1",
+    "Qwen/Qwen2.5-7B-Instruct",
+    "Qwen/Qwen2.5-Coder-32B-Instruct",
 ]
 
 MAX_STEPS = 8
@@ -55,10 +55,7 @@ def parse_action(text):
 
 
 def run_agent(api_key, model, user_query, on_step=None):
-    """Run the ReAct agent loop.
-
-    on_step: optional callback(step_num, step_type, content) for streaming updates.
-    """
+    """Run the ReAct agent loop."""
     client = InferenceClient(api_key=api_key)
     tools_desc = format_tools_description()
 
